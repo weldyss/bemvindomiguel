@@ -26,6 +26,8 @@ GEM
       nokogiri (~> 1.6)
     popper_js (1.12.9)
     rack (2.0.4)
+    rack-livereload (0.3.16)
+      rack
     rack-protection (2.0.0)
       rack
     rb-fsevent (0.10.2)
@@ -49,6 +51,7 @@ PLATFORMS
 DEPENDENCIES
   bootstrap (~> 4.0.0)
   pagseguro-oficial (~> 2.5.0)
+  rack-livereload
   sinatra
 
 BUNDLED WITH
