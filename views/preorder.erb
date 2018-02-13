@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/images/favicon.ico">
+
+    <title>Bem-vindo Miguel</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Custom styles for this template -->
+    <link href="/css/app.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <p class="mute">
+        texto de teste
+      </p>
+      <form action="/pay" method="post">
+        <div class="form-group">
+          <label for="order_name">Seu nome:</label>
+          <input type="text" name="order[name]" id="order_name" class="form-control" />
+        </div>
+
+        <div class="form-group">
+          <label for="order_email">Seu email:</label>
+          <input type="email" name="order[email]" id="order_email" class="form-control" />
+        </div>
+
+        <div class="form-group">
+          <label for="order_name">Escreva uma mensagem:</label>
+          <textarea name="order[message]" id="order_message" class="form-control"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label>
+            <input type="radio" name="order[amount]" value=30.0 />
+            <img src="/images/fraldas-30.png">
+          </label>
+          
+          <label>
+            <input type="radio" name="order[amount]" value=50.0 />
+            <img src="/images/fraldas-50.png">
+          </label>
+          
+          <label>
+            <input type="radio" name="order[amount]" value=100.0 />
+            <img src="/images/fraldas-100.png">
+          </label>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" class="btn btn-lg btn-outline btn-primary">Enviar</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
