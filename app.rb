@@ -50,6 +50,11 @@ post '/pay' do
   end
 end
 
+get '/view-messages' do
+  @orders = Order.all
+  erb :view_messages
+end
+
 
 class Order < ActiveRecord::Base
   validates :name, :email, presence: true
