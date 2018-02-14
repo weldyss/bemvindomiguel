@@ -1,18 +1,12 @@
-/*
- * Globals
- */
-
-/*
- * Base structure
- */
-
-html,
-body {
+html, body {
   height: 100%;
-  background: #fff url('/images/miguel.png') no-repeat top center;
 }
 
-body {
+.home {
+  background-image: url("/images/miguel.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: -ms-flexbox;
   display: -webkit-box;
   display: flex;
@@ -24,7 +18,59 @@ body {
   box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
 }
 
+.internal {
+  background-image: url("/images/miguel-internal.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: initial;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.form-internal {
+  background-color: #fff;
+  border: 1px solid #eee;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  height: 100%
+}
+
+.masthead {
+  margin-bottom: 2rem;
+}
+
 .cover-container {
   max-width: 60em;
-  margin-bottom: 2em;
+  margin-bottom: 10em;
 }
+
+label > input{ /* HIDE RADIO */
+  visibility: hidden; /* Makes input not-clickable */
+  position: absolute; /* Remove input from document flow */
+}
+label > input + img{ /* IMAGE STYLES */
+  cursor:pointer;
+  border:2px solid transparent;
+}
+label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
+  border:2px solid #5093cd;
+  border-radius: 10px;
+}
+
+@media only screen and
+(min-width: 320px) and (max-width: 1200px)
+{
+  .internal {
+    padding-top: 8rem;
+    padding-bottom: 0;
+  }
+}
+
