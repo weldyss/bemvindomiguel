@@ -32,7 +32,7 @@ html, body {
   text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
   box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
   padding-top: 10rem;
-  padding-bottom: 10rem;
+  padding-bottom: 5rem;
 }
 
 .form-internal {
@@ -49,7 +49,7 @@ html, body {
 
 .cover-container {
   max-width: 60em;
-  margin-bottom: 10em;
+  margin-bottom: 5em;
 }
 
 label > input{ /* HIDE RADIO */
